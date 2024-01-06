@@ -13,7 +13,7 @@ body {
 }
 
 .btn-primary {
-    background-color: #FD6E0A;
+    background-color: #FD6E0A !important;
     padding: 18px 35px;
     border-radius: 5px;
     color: white;
@@ -58,9 +58,9 @@ nav a {
 /* Header related style */
 .header-class {
     background-color: #FFF8F3;
-    background-image: url(../images/header_bg.png);
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom right, top left;
 }
 
 .banner {
@@ -207,11 +207,13 @@ main section {
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
+    margin-bottom: 30px;
 
 }
 
 .resume-container {
     display: flex;
+    padding-top: 40px;
     gap: 50px;
 }
 
@@ -254,7 +256,8 @@ footer {
     width: 50%;
 }
 
-.contact input,
+.contact input[type="text"],
+.contact input[type="email"],
 textarea {
     border-radius: 5px;
     background: var(--White-Color, #FFF);
@@ -265,4 +268,13 @@ textarea {
     width: 100%;
 }
 
-.contact
+.social-links a {
+    margin-right: 25px;
+    align-items: center;
+
+}
+
+.social-links img {
+    size: 24px;
+
+}
