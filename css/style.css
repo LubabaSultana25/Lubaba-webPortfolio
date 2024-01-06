@@ -98,10 +98,14 @@ nav a {
 }
 
 /* main section */
-.main {
+main {
     max-width: 1140px;
     margin: 0 auto;
     /* background-color: #FFF8F3; */
+}
+
+main section {
+    margin-top: 130px;
 }
 
 .section-title {
@@ -138,6 +142,8 @@ nav a {
 
 }
 
+
+
 .info-title {
     color: #474747;
     font-weight: 400;
@@ -148,4 +154,58 @@ nav a {
     font-weight: 600;
 
     font-size: 20px;
+}
+
+/* skills related styles */
+#what-i-do {
+    padding: 30px 10px;
+}
+
+.skill-section {
+    display: flex;
+
+    gap: 24px;
+
+}
+
+.skill {
+    padding: 30px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 3px 6px 50px 4px rgba(0, 0, 0, 0.06);
+
+}
+
+.skill:hover {
+    background-color: antiquewhite;
+    /* zoom: 1; */
+
+}
+
+.skill-title {
+    color: var(--Dark-01, #181818);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.skill-description {
+    /* padding: 30px; */
+    color: var(--Dark-03, #757575);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+}
+
+/* resume section style */
+.resume-column-title {
+    color: var(--Dark-02, #474747);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+
 }
